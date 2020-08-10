@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login in Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+h2 
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-size: auto;
+}
+.box
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 50px;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	box-shadow: 0 3px rgba(0,0,0,.5);
+	border-radius: 15px;
+}
+.box h2
+{
+	margin: 0 0 40px;
+	padding: 0;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+}
+.box .inputBox
+{
+	position: relative;
+}
+.box .inputBox input
+{
+	width: 100%;
+	padding: 0;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.box .inputBox label
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	letter-spacing: 1px;
+	padding: 1.5px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: 1.5s;
+}
+.box .inputBox :focus ~ label,
+.box .inputBox :valid ~ label
+{
+	top: -20px;
+	left: 0;
+	color: #3a9f44;
+	font-size: 15px;
+}
+.box input[type="Submit"]
+{
+	background: transparent;
+	border: none;
+	outline: none;
+	height:40px;
+	color: #fff;
+	background: #1c8adb;
+	font-size: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="box">
+		<h2>Login CMS</h2>
+		<form>
+			<div class="inputBox">
+				<input type="text" name="username"required="admin">
+				<label>Username</label>
+			</div>
+			<div class="inputBox">
+				<input type="Password" name="Password" required="123">
+				<label>Password</label>
+			</div>
+			<input type="Submit" name="Submit" value="Login">
+		</form>
+	</div>
+
+</body>
+</html>
